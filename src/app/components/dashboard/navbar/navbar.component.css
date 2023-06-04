@@ -1,0 +1,12 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.button {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.button:hover {
+    background-color: #37459e;
+}

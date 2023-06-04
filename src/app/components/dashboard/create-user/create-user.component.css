@@ -1,0 +1,33 @@
+.body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 770px;
+    padding: 15px;
+    margin-top: 50px; 
+    text-align: center;
+    background-color:#EAEFF3;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  mat-form-field {
+    margin-bottom: 20px;
+  }
+  
+  .ancho {
+    width: 80%;
+  }

@@ -1,0 +1,51 @@
+.body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 770px;
+  padding: 15px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #eaeff3;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 200px;
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 20px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.ancho {
+  width: 80%;
+}
+
+button {
+    width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

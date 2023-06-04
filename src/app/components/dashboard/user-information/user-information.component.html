@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+
+<div class="body">
+    <div class="container">
+        <h1>Usuario {{ name }}</h1>
+        <form (ngSubmit)="updateUser()" class="form">
+            <div *ngIf="image_url">
+                <img [src]="image_url" alt="Imagen" style="width: 200px; height: auto;">
+            </div>
+
+            <mat-form-field>
+              <mat-label>Nombre:</mat-label>
+              <input matInput type="text" id="name" name="name" [(ngModel)]="name">
+            </mat-form-field>
+          
+            <mat-form-field>
+              <mat-label>Correo electrónico:</mat-label>
+              <input matInput type="email" id="email" name="email" [(ngModel)]="email">
+            </mat-form-field>
+          
+            <mat-form-field>
+              <mat-label>Edad:</mat-label>
+              <input matInput type="number" id="age" name="age" [(ngModel)]="age">
+            </mat-form-field>
+          
+            <mat-form-field>
+              <mat-label>Género:</mat-label>
+              <mat-select id="gender" name="gender" [(ngModel)]="gender">
+                <mat-option value="Masculino">Masculino</mat-option>
+                <mat-option value="Femenino">Femenino</mat-option>
+                <mat-option value="Otro">Otro</mat-option>
+              </mat-select>
+            </mat-form-field>
+          
+            <mat-form-field>
+              <mat-label>Biografía:</mat-label>
+              <textarea matInput id="bio" name="bio" [(ngModel)]="bio"></textarea>
+            </mat-form-field>
+          
+            <mat-form-field>
+                <mat-label>Fecha de Nacimiento</mat-label>
+                <input matInput [matDatepicker]="picker" [(ngModel)]="birth" name="birth">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+          
+            <mat-form-field>
+                <mat-label>URL de la imagen:</mat-label>
+                <input matInput type="url" id="image_url" name="image_url" [(ngModel)]="image_url">
+              </mat-form-field>
+              
+            <button mat-raised-button color="primary" type="submit">Actualizar</button>
+          </form>
+    </div>
+</div>
